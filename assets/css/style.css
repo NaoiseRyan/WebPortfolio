@@ -1,0 +1,412 @@
+@font-face {
+    font-family: LeagueSpartan;
+    src: url(..\fonts\League_Spartan\LeagueSpartan-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "League Spartan", sans-serif;
+    color: #44382e;
+}
+
+nav {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    background-color: #ffe1c8;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    padding: 126px;
+    min-height: 100%;
+}
+
+article {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+a {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+p, li {
+    font-size: 20px;
+}
+
+
+hr {
+    border: 1px solid #44382e;
+}
+
+img {
+    border: 2px solid black;
+}
+
+
+/*---------------Nav Classes*/
+.navTitle {
+    margin-bottom: 30px;
+}
+
+.desktopBr {
+    display: block;
+}
+
+.navBranding {
+    margin-bottom: 60px;
+}
+
+.navContainer {
+    display: grid;
+    padding: 30px;
+    height: 92%;
+}
+
+.navLinks li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.navLinks li .active {
+    color: #ff8b2f;
+    font-weight: 600;
+}
+
+.navLinks a:hover {
+    color: #2f55ff;
+    font-weight: 700;
+}
+
+.navLinks a {
+    text-decoration: none;
+}
+
+.navLastUpdated {
+    align-self: flex-end;
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+.hamburgerContainer {
+    display: none;
+}
+
+/*--------------Article classes and elements*/
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.codingSection {
+    gap: 40px;
+}
+
+.codingImg {
+    width: 40%;
+    height: 100%;
+}
+
+.codingFigure {
+    width: 40%;
+}
+
+.articleTextContainer {
+    width: 60%;
+}
+
+.articleTextContainer a {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.articleTextContainer h2 {
+    padding-bottom: 15px;
+}
+
+.articleTextContainer h2 {
+    margin-bottom: 20px;
+}
+
+.articleTextContainer ul {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+/*------------------------About Page*/
+
+.articleAbout {
+    gap: 0px;
+}
+
+.aboutLeftContainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aboutRightContainer {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    justify-content: center;
+}
+
+.aboutRightContainer figure {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*----------Animation*/
+.animationArticle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.animationContainer {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 35px;
+}
+
+figcaption {
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 6px;
+}
+
+.animationContainer figure {
+    margin: auto;
+    width: 250px;
+}
+
+/*------------Art*/
+.artGridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+.artItem {
+    display: inline-block;
+    min-width: 100px;
+    min-height: auto;
+}
+
+.artItem figure {
+    width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+    section {
+        padding: 25px;
+    }
+
+    article {
+        flex-direction: column;
+        margin-bottom: 42px;
+    }
+
+    img {
+    min-height: auto;
+    min-width: 75%;
+    }
+
+    /*---------------article classes and elements*/
+    figure {
+        width: 70%;
+        align-self: center;
+    }
+
+    .articleTextContainer {
+        width: 100%;
+    }
+
+    .aboutLeftContainer {
+        width: 100%;
+    }
+
+    .aboutRightContainer {
+        padding-bottom: 25px;
+        width: 100%;
+    }
+
+    .articleAbout {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .artGridContainer {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    h2, figcaption {
+        font-size: 25px;
+        font-weight: 550;
+    }
+
+    a {
+        font-size: 13px;
+    }
+
+    nav {
+        position: sticky;
+        float: none;
+        top: 0;
+        width: 100%;
+    }
+
+    section {
+        margin-left: 0;
+        padding: 25px;
+    }
+
+    article {
+        flex-direction: column;
+        margin-bottom: 42px;
+    }
+
+    /*---------------Nav Classes*/
+    .navContainer {
+        display: grid;
+        padding: 15px;
+        min-height: 52px;
+        grid-template-areas:
+            "Title Title Title Title Title Title Hamburger"
+            "LastUpdated LastUpdated LastUpdated LastUpdated LastUpdated LastUpdated  Hamburger"
+        ;
+    }
+
+    .navTitle {
+        margin: 0;
+    }
+
+    .navBranding,
+    .navLinks {
+        padding: 0;
+    }
+
+    .navBranding,
+    .navLinks,
+    .desktopBr {
+        display: none;
+    }
+
+    .navLastUpdated {
+        margin-top: 10px;
+        grid-area: LastUpdated;
+    }
+
+    .hamburgerMenu {
+        column-width: 100px;
+        max-width: 50px;
+        max-height: 50px;
+        height: auto;
+        display: block;
+        grid-area: Hamburger;
+    }
+
+    .hamburgerMenu img {
+        border: 0;
+    }
+
+    #navTitleAndLinks {
+        grid-area: Title;
+    }
+
+    /*----------Hamburger*/
+    .hamburgerContainer {
+        display: none;
+    }
+
+    .navHamburgerLinks li {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .navHamburgerLinks li .active {
+        color: #ff8b2f;
+        font-weight: 600;
+    }
+
+    .navHamburgerLinks a:hover {
+        color: #2f55ff;
+        font-weight: 700;
+    }
+
+    .navHamburgerLinks a {
+        text-decoration: none;
+        font-size: 23px;
+        width: 100%;
+        padding: 20px;
+        padding-left: 15px;
+    }
+
+    .hamburgerDivider {
+        border-top: 1px solid black;
+        width: 70%;
+    }
+
+    /*---------------article classes and elements*/
+    figure {
+        max-width: 100%;
+        width: 70%;
+        align-self: center;
+    }
+
+    .articleTextContainer {
+        width: 100%;
+    }
+
+    .aboutLeftContainer {
+        width: 100%;
+    }
+
+    .aboutRightContainer {
+        width: 100%;
+        padding-bottom: 25px;
+    }
+
+    .articleAbout {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .artGridContainer {
+        grid-template-columns: auto auto;
+    }
+}
