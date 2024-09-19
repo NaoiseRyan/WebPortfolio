@@ -60,7 +60,6 @@ img, embed {
     border: 2px solid black;
 }
 
-
 /*---------------Nav Classes*/
 .navTitle {
     margin-bottom: 30px;
@@ -124,6 +123,7 @@ img, embed {
 .codingImg {
     width: 40%;
     height: 100%;
+    max-width: 720px;
 }
 
 .codingFigure {
@@ -235,7 +235,7 @@ figcaption {
         margin-bottom: 42px;
     }
 
-    img, embed {
+    img {
     min-height: auto;
     min-width: 75%;
     }
